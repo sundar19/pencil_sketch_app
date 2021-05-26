@@ -10,7 +10,7 @@ def load_image(image_file):
     img.save("sketch_input.jpg")
     return img
 
-image_file = st.file_uploader("Upload An Image",type=['png','jpeg','jpg'])
+image_file = st.file_uploader("Upload An Image For Pencil Sketch",type=['png','jpeg','jpg'])
 if image_file is not None:
     file_details = {"FileName":image_file.name,"FileType":image_file.type}
     st.write(file_details)
