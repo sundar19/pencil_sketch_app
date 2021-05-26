@@ -53,6 +53,9 @@ pencil_jc = dodgeV2(gray,gauss)
 #cv2.imshow('gauss',gauss)
 # cv2.imshow('pencil sketch',pencil_jc)
 cv2.imwrite("sketch_output.jpg",pencil_jc)
-st.image("sketch_output.jpg")
+if image_file is not None:
+    st.image("sketch_output.jpg")
+else:
+    st.empty()
 # cv2.waitKey(0)
 cv2.destroyAllWindows()
